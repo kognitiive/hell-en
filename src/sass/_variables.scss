@@ -1,0 +1,14 @@
+:root {
+    // COLORS
+    --white-color: rgba(255, 255, 255, 1);
+    --black-color: rgba(17, 21, 24, 1);
+    --gray-color: rgba(185, 185, 185, 1);
+    --accent-color: rgba(255, 107, 9, 1);
+
+    // COLORS FOR "We guarantee" SECTION
+    --wg-black-color: rgba(61, 61, 61, 1);
+    --wg-gray-color: rgba(241, 241, 241, 1);
+
+    //Transition
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
