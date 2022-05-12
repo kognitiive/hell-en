@@ -1,0 +1,144 @@
+.footer {
+
+    &__logo {
+        padding: 40px 0;
+        @media screen and (min-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__wrapper {
+        @media screen and (min-width:768px) {
+                display: flex;
+                align-items: center;
+            }
+    }
+
+    &__reserved {
+        padding: 24px 0;
+
+        text-align: center;
+
+        background-color: var(--black-color);
+   }
+
+   &__social {
+    margin: 0 auto;
+
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/icon-instagram.svg);
+
+    @media screen and (min-width:768px) {
+            &::before {
+                content: '';
+                display: inline-block;
+                margin-right: 24px;
+
+                width: 1px;
+                height: 40px;
+                background-color: var(--gray-color);
+            }
+        }
+   }
+}
+
+.logo {
+    display: block;
+    width: 80px;
+
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 1.23;
+    letter-spacing: 0.08em;
+    
+    color: var(--black-color);
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 14.2px;
+        height: 19.3px;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 5px;
+        line-height: 1.2;
+        
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        
+        color: var(--black-color);
+    }
+
+    &__span {
+        color: var(--accent-color);
+    }
+
+    &-footer {
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        @media screen and (min-width:768px) {
+            margin: 0;
+        }
+        
+    }
+}
+
+.address {
+    width: 197px;
+    height: 19px;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        width: auto;
+        margin: 0;
+        }
+
+   &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    
+    letter-spacing: 0.08em;
+    
+    color: var(--black-color);
+
+    @media screen and (min-width:768px) {
+            margin-right: 24px;
+        }
+
+    &::before {
+        content: '';
+        margin-right: 8px;
+        
+        width: 20px;
+        height: 19px;
+        display: inline-block;
+        background: url(../images/icon-phone.svg);
+        background-size: contain;
+    }
+   }
+}
+
+.reserved {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    
+    color: var(--gray-color);
+}
