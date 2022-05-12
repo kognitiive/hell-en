@@ -2,6 +2,18 @@
 
     &__logo {
         padding: 40px 0;
+        @media screen and (min-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__wrapper {
+        @media screen and (min-width:768px) {
+                display: flex;
+                align-items: center;
+            }
     }
 
     &__reserved {
@@ -13,11 +25,23 @@
    }
 
    &__social {
-        margin: 0 auto;
+    margin: 0 auto;
 
-       width: 40px;
-       height: 40px;
-       background-image: url(../images/icon-instagram.svg);
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/icon-instagram.svg);
+
+    @media screen and (min-width:768px) {
+            &::before {
+                content: '';
+                display: inline-block;
+                margin-right: 24px;
+
+                width: 1px;
+                height: 40px;
+                background-color: var(--gray-color);
+            }
+        }
    }
 }
 
@@ -60,6 +84,10 @@
     &-footer {
         margin: 0 auto;
         margin-bottom: 20px;
+
+        @media screen and (min-width:768px) {
+            margin: 0;
+        }
         
     }
 }
@@ -70,6 +98,11 @@
 
     margin: 0 auto;
     margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        width: auto;
+        margin: 0;
+        }
 
    &__link {
     display: inline-flex;
@@ -84,6 +117,10 @@
     letter-spacing: 0.08em;
     
     color: var(--black-color);
+
+    @media screen and (min-width:768px) {
+            margin-right: 24px;
+        }
 
     &::before {
         content: '';
