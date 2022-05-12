@@ -31,17 +31,6 @@
     height: 40px;
     background-image: url(../images/icon-instagram.svg);
 
-    @media screen and (min-width:768px) {
-            &::before {
-                content: '';
-                display: inline-block;
-                margin-right: 24px;
-
-                width: 1px;
-                height: 40px;
-                background-color: var(--gray-color);
-            }
-        }
    }
 }
 
@@ -101,6 +90,7 @@
 
     @media screen and (min-width:768px) {
         width: auto;
+        height: auto;
         margin: 0;
         }
 
@@ -131,6 +121,18 @@
         display: inline-block;
         background: url(../images/icon-phone.svg);
         background-size: contain;
+    }
+
+    &::after {
+        @media screen and (min-width:768px) {
+                content: '';
+                display: block;
+                margin-right: 24px;
+        
+                width: 1px;
+                height: 40px;
+                background-color: var(--gray-color);
+            }
     }
    }
 }
