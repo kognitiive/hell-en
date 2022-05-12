@@ -4,9 +4,11 @@
     padding-bottom: 40px;
 }
 
+.current {
+    color: var(--accent-color);
+}
 
-
-.logo {
+.logo-header {
     display: block;
     width: 80px;
     font-weight: 800;
@@ -40,9 +42,9 @@
 .logo_span {
     color: var(--accent-color);
 }
-.logo-footer {
+.logo-header {
     margin: 0 auto;
-    margin-bottom: 20px;
+
 }
 
 
@@ -53,22 +55,28 @@
     align-items: center;
 }
 
-.site-nav {
-    display: none;
-}
+
 
 .button-call {
     display: none;
 }
 
+.mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
 
 
 
 
-// @media screen and (max-width: 1199px) {
-   
 
-// }
+@media screen and (max-width: 1365px) {
+    .site-nav {
+        display: none;
+    }
+
+}
 
 // @media screen and (max-width: 767px) {
    
@@ -81,16 +89,68 @@
 
 // }
 
-// @media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
 
 
-// }
 
-// @media screen and (min-width: 768px) {
+}
 
-// }
+@media screen and (min-width: 768px) {
+    .btn-nav {
+        display: flex;
+    }
+
+    .button-call {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        background-color: transparent;
+        padding: 15px 5px;
+        border-color: var(--accent-color);
+        margin-right: 40px;
+        
+    
+        color: var(--accent-color)
+            }
+
+}
 
 
-// @media screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {
+    .mobile-menu-btn {
+        display: none;
+    }
 
-// }
+    .site-nav {
+        display: flex;
+    }
+
+
+    .site-nav__item {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #B9B9B9;
+        margin-right: 40px;
+        
+
+    }
+
+}
