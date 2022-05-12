@@ -9,40 +9,69 @@
 .logo {
     display: block;
     width: 80px;
+
     font-weight: 800;
     font-size: 17px;
     line-height: 1.23;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
+
     color: var(--black-color);
 
-}
+    @media screen and(min-width:768px) {
+        font-size: 26px;
+        width: auto;
+    }
 
-.logo__inner {
-    display: flex;
-    align-items: center;
+    &__inner {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2px;
 
-}
+        @media screen and(min-width:768px) {
+            margin-bottom: 3px;
+        }
+    }
 
-.logo__icon {
-    width: 14.2px;
-    height: 19.3px;
-}
+    &__icon {
+        width: 14.2px;
+        height: 19.3px;
 
-.logo_text {
-    font-weight: 700;
-    font-size: 5px;
-    line-height: 1.2;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--black-color);
-}
+        @media screen and(min-width:768px) {
+            width: 22px;
+            height: 30px;
+            }
+    }
 
-.logo_span {
-    color: var(--accent-color);
-}
-.logo-footer {
-    margin: 0 auto;
-    margin-bottom: 20px;
+    &__text {
+        font-weight: 700;
+        font-size: 5px;
+        line-height: 1.2;
+
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+
+        color: var(--black-color);
+
+        @media screen and(min-width:768px) {
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 1.25;
+        }
+    }
+
+    &__span {
+        color: var(--accent-color);
+    }
+
+    &-footer {
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        @media screen and (min-width:768px) {
+            margin: 0;
+        }
+
+    }
 }
 
 

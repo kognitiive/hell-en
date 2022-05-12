@@ -15,23 +15,38 @@
     }
 }
 .hero__text {
+    // width: 280px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.08em;
     color: var(--gray-color);
+
     @media screen and (min-width: 1366px) {
         font-size: 20px;
         line-height: 164.9%;
     }
 }
 .hero__text2 {
-    color: var(--black-color);
     font-weight: 800;
+    display: block;
+    color: var(--black-color);
+
+    @media screen and (min-width: 1366px) {
+        display: inline;
+    }
 }
 .hero__text3 {
-    color: var(--accent-color);
     font-weight: 800;
+    display: block;
+    color: var(--accent-color);
+
+    @media screen and (min-width: 1366px) {
+        display: inline;
+        color: var(--black-color);
+    }
+
    }
 .hero__btn {
     font-weight: 700;
