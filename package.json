@@ -26,6 +26,5 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "cleanup-dependencies": "0.0.6"
   }
 }
