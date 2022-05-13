@@ -2,13 +2,13 @@
     <div class="container header__container">
         <nav class="main-nav">
             <div class="hedader__logo">
-                <a class="logo-header-big" href="">
+                <a class="logo" href="">
                     <div class="logo__inner">
-                        Hell<svg class="logo__icon-big">
+                        Hell<svg class="logo__icon">
                             <use href="images/symbol-defs.svg#icon-campfire"></use>
                         </svg>EN
                     </div>
-                    <p class="logo__text-big"><span class="logo__span">hellish</span> english</p>
+                    <p class="logo__text"><span class="logo__span">hellish</span> english</p>
                 </a>
             </div>
             <div class="btn-nav">
@@ -28,11 +28,11 @@
             </div>
         </nav>
     </div>
-
-    <div class="mobile-menu" data-menu>
-        <div class="container mobile-menu__container">
+    <a href="#" class="modal-link js-open-modal" data-modal="1">Открыть окно 1</a>
+    <div class="modal mobile-menu" data-modal="1">
+        <div class="mobile-menu__container">
         <div class="hedader__logo logo-header-mobile">
-            <a class="logo-header-white" href="">
+            <a class="logo-header logo-header-white" href="">
                 <div class="logo__inner">
                     Hell<svg class="logo__icon-mobile">
                         <use href="images/symbol-defs.svg#icon-campfire"></use>
@@ -41,7 +41,7 @@
                 <p class="logo__text-mobile"><span class="logo__span">hellish</span> english</p>
             </a>
         </div>
-        <button class="mobile-menu__close-btn" data-menu-close>
+        <button class="modal__cross" js-modal-close>
             <svg class="mobile-menu-close__icon" width="16" height="16">
                 <use href="images/symbol-defs.svg#icon-cross" ></use>
             </svg>
