@@ -1,6 +1,7 @@
 .benefits {
   background: linear-gradient(to bottom, var(--black-color) 70%, var(--white-color) 30%);
   counter-reset: section;
+  padding: 24px 0;
 }
 .benefits__title {
   font-weight: 800;
@@ -8,7 +9,7 @@
   line-height: 130%;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  padding: 24px 0;
+  padding-bottom: 24px;
   text-align: left;
 }
 .benefits__help {
@@ -33,13 +34,13 @@
   color: var(--black-color);
 }
 .benefits-list__item::before {
-  display: block;
+  display: inline-block;
   counter-increment: section;
-  content: '\2014\202F\202F''0' counter(section);
+  content: '\2014\202F\202F 0'counter(section);
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.08em;
   color: var(--accent-color);
-  margin-bottom: -13px;
+  margin-bottom: 5px;
 }
