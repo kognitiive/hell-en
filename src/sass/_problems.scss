@@ -1,5 +1,5 @@
 .problems {
-  background: linear-gradient(to bottom, var(--black-color) 70%, var(--white-color) 30%);
+  background: linear-gradient(to bottom, var(--black-color) 75%, var(--white-color) 25%);
   counter-reset: section;
 }
 .problems__title {
@@ -19,7 +19,7 @@
   grid-template-columns: 1fr;
 
   grid-column-gap: 0px;
-  grid-row-gap: 16px;
+  grid-row-gap: 18px;
   width: 280px;
   background-color: var(--white-color);
   padding: 20px;
@@ -33,12 +33,13 @@
   color: var(--black-color);
 }
 .problems-list__item::before {
+  display: block;
   counter-increment: section;
   content: '\2014\202F\202F''0' counter(section);
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.08em;
-
   color: var(--accent-color);
+  margin-bottom: -13px;
 }
