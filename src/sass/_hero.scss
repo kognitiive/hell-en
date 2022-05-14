@@ -80,6 +80,7 @@
     letter-spacing: 0.08em;
     @media screen and (min-width: 1680px) {
         display: inline;
+        font-size: 20px;
     }
 }
 .hero__text3 {
@@ -91,6 +92,7 @@
     @media screen and (min-width: 1680px) {
         display: inline;
         color: var(--black-color);
+        font-size: 20px;
     }
 }
 .hero__btn {
