@@ -37,8 +37,9 @@
   counter-increment: section;
   content: '\2014\202F\202F 0'counter(section);
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.6;
+
   letter-spacing: 0.08em;
   color: var(--accent-color);
   margin-bottom: 5px;
@@ -52,10 +53,47 @@
   }
   .problems__list {
     width: 704px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: repeat(3, 0fr);
     gap: 24px 40px;
     padding: 32px 80px;
     box-shadow: -5px 8px 26px 0px #0000000a;
+  }
+  .problems-list__item {
+    width: 216px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .problems {
+    padding: 80px 0;
+    background: url(../images/fire-problems.svg),
+      linear-gradient(to bottom, var(--black-color) 65%, var(--white-color) 30%);
+    background-repeat: no-repeat;
+    background-position: right 5% bottom 75%;
+  }
+  .problems__title {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 1.3;
+    width: 860px;
+    letter-spacing: 0.03em;
+    padding-bottom: 80px;
+  }
+  .problems-list__item {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    width: 336px;
+  }
+  .problems-list__item::before {
+    font-size: 20px;
+  }
+  .problems__list {
+    width: 1648px;
+    padding: 60px 140px;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(2, 0fr);
+    gap: 72px 85px;
   }
 }

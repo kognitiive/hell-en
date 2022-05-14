@@ -52,14 +52,24 @@
   }
   .benefits__title {
     text-align: center;
-    width: 100%;
+    width: 492px;
+    display: block;
+    margin: 0 auto;
+  }
+  .benefits-list__item::before {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.6;
   }
   .benefits__list {
-    width: 688px;
+    width: 704px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 44px 32px;
     padding: 40px 92px;
     box-shadow: -5px 8px 26px 0px #0000000a;
+  }
+  .benefits-list__item {
+    width: 236px;
   }
 }

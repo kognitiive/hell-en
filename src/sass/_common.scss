@@ -1,46 +1,46 @@
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 480px) {
-    .container {
-        width: 480px;
-    }
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-        padding: 0 32px;
-    }
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
 }
 
-@media screen and (min-width: 1366px) {
-    .container {
-        width: 1366px;
-        padding: 16px;
-    }
+@media screen and (min-width: 1680px) {
+  .container {
+    width: 1680px;
+    padding: 16px;
+  }
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.08em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.08em;
 
-    background-color: var(--white-color);
+  background-color: var(--white-color);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -50,5 +50,5 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
