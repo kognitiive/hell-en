@@ -35,7 +35,7 @@
   color: var(--black-color);
 }
 .benefits-list__item::before {
-  display: inline-block;
+  display: block;
   counter-increment: section;
   content: '\2014\202F\202F 0'counter(section);
   font-weight: 700;
@@ -91,10 +91,10 @@
     padding: 60px 140px;
     grid-template-columns: repeat(3, 0fr);
     grid-template-rows: repeat(2, 0fr);
-    gap: 72px 204px;
+    gap: 72px 85px;
   }
   .benefits-list__item {
-    width: 356px;
+    width: 336px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.4;
@@ -102,6 +102,8 @@
   }
   .benefits-list__item::before {
     font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
   }
   .benefits {
     padding: 0;

@@ -32,14 +32,14 @@
   letter-spacing: 0.08em;
   color: var(--black-color);
 }
+
 .problems-list__item::before {
-  display: inline-block;
+  display: block;
   counter-increment: section;
   content: '\2014\202F\202F 0'counter(section);
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6;
-
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.08em;
   color: var(--accent-color);
   margin-bottom: 5px;
@@ -61,6 +61,9 @@
   }
   .problems-list__item {
     width: 216px;
+  }
+  .problems-list__item::before {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1680px) {
@@ -88,6 +91,8 @@
   }
   .problems-list__item::before {
     font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
   }
   .problems__list {
     width: 1648px;
