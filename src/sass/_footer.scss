@@ -1,0 +1,131 @@
+.footer {
+
+    padding-top: 40px;
+    padding-bottom: 24px;
+
+    background-image: linear-gradient(to bottom, var(--white-color) 72.22%, var(--black-color) 72.22%);
+
+    @media screen and (min-width:768px) {
+        background-image: linear-gradient(to bottom, var(--white-color) 61%, var(--black-color) 61%);
+    }
+
+    @media screen and (min-width:1680px) {
+        padding-top: 80px;
+        padding-bottom: 27px;
+
+        background-image: linear-gradient(to bottom, var(--white-color) 72.22%, var(--black-color) 72.22%);
+    }
+
+    &__logo {
+        margin-bottom: 65px;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media screen and (min-width:1680px) {
+            margin-bottom: 108px;
+            justify-content: flex-start;
+        }
+    }
+
+    &__wrapper {
+        @media screen and (min-width:768px) {
+                display: flex;
+                align-items: center;
+            }
+    }
+
+    &__reserved {
+
+        text-align: center;
+   }
+
+   &__social {
+    display: block;
+    margin: 0 auto;
+
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/icon-instagram.svg);
+
+   }
+}
+
+.address {
+    width: 197px;
+    height: 19px;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        width: auto;
+        height: auto;
+        margin: 0;
+        }
+
+   &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    
+    letter-spacing: 0.08em;
+    
+    color: var(--black-color);
+
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+        
+        margin-right: 24px;
+    }
+
+    @media screen and (min-width:1680px) {
+        font-size: 30px;
+        line-height: 1.23;
+    }
+
+    &::before {
+        content: '';
+        margin-right: 8px;
+        
+        width: 20px;
+        height: 19px;
+        display: inline-block;
+        background: url(../images/icon-phone.svg);
+        background-size: contain;
+
+        @media screen and (min-width:768px) {
+            width: 24px;
+            height: 23px;
+        }
+    }
+
+    &::after {
+        @media screen and (min-width:768px) {
+                content: '';
+                display: block;
+                margin-left: 24px;
+        
+                width: 1px;
+                height: 40px;
+                background-color: var(--gray-color);
+            }
+    }
+   }
+}
+
+.reserved {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    
+    color: var(--gray-color);
+}

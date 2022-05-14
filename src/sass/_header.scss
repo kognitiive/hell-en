@@ -1,0 +1,129 @@
+.header {
+    background-color: var(--white-color);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+
+.logo {
+    display: block;
+    width: 80px;
+
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+
+    color: var(--black-color);
+
+    @media screen and(min-width:768px) {
+        font-size: 26px;
+        width: auto;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2px;
+
+        @media screen and(min-width:768px) {
+            margin-bottom: 3px;
+        }
+    }
+
+    &__icon {
+        width: 14.2px;
+        height: 19.3px;
+
+        @media screen and(min-width:768px) {
+            width: 22px;
+            height: 30px;
+            }
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 5px;
+        line-height: 1.2;
+
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+
+        color: var(--black-color);
+
+        @media screen and(min-width:768px) {
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 1.25;
+        }
+    }
+
+    &__span {
+        color: var(--accent-color);
+    }
+
+    &-footer {
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        @media screen and (min-width:768px) {
+            margin: 0;
+        }
+
+        @media screen and (min-width:1680px) {
+            margin-right: 450px;
+        }
+
+    }
+}
+
+
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav {
+    display: none;
+}
+
+.button-call {
+    display: none;
+}
+
+
+
+
+
+// @media screen and (max-width: 1199px) {
+   
+
+// }
+
+// @media screen and (max-width: 767px) {
+   
+    
+
+// }
+
+// @media screen and (max-width: 479px) {
+    
+
+// }
+
+// @media screen and (min-width: 480px) {
+
+
+// }
+
+// @media screen and (min-width: 768px) {
+
+// }
+
+
+// @media screen and (min-width: 1366px) {
+
+// }
