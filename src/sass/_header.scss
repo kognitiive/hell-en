@@ -1,5 +1,4 @@
 .header {
-    // position: relative;
     padding-top: 20px;
     padding-bottom: 40px;
 }
@@ -9,9 +8,24 @@
     height: 19.3px;
 }
 
+.current {
+    color: var(--accent-color);
+    }
+
 
 
 @media screen and (max-width: 1679px) {
+
+    .mobile-menu-close__icon {
+        position: absolute;
+        top: 20px;
+        stroke: var(--white-color);
+        right: 20px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+    
 
 
     .logo-header-white {
@@ -24,11 +38,13 @@
         color: var(--white-color)
     
     }
-
-    
 }
 
 @media screen and (max-width: 767px) {
+
+    .mobile-list {
+        margin-bottom: 40px;
+    }
     .logo__text {
         font-weight: 700;
         font-size: 5px;
@@ -63,16 +79,8 @@
         height: 19.3px;
     }
 
-    .mobile-menu__close-btn {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        // background-color: transparent;
-        // border: none;
-        // padding: 0;
-    }
     .logo-header-mobile{
-        position: absolute;
+        margin-bottom: 40px;
         top: 20px;
         left: 20px;
     }
@@ -80,13 +88,9 @@
         font-weight: 800;
         font-size: 20px;
         line-height: 1.8;
-
-    
         letter-spacing: 0.03em;
-    
         color: var(--white-color);
     }
-
     .mobile-nav {
         padding-top: 89px;
     }
@@ -96,8 +100,6 @@
             font-weight: 700;
             font-size: 14px;
             line-height: 1.21;
-        
- 
             align-items: center;
             text-align: center;
             letter-spacing: 0.14em;
@@ -106,15 +108,12 @@
             padding: 15px 5px;
             border-color: var(--accent-color);
             margin-right: 40px;
-            
-        
             color: var(--accent-color)
                 }
-
     
 }
 
-    
+
 @media screen and (min-width: 480px) {
     .logo-header-white {
         display: block;
@@ -176,13 +175,13 @@
         letter-spacing: 0.04em;
         color: var(--white-color);
     }
-    .mobile-menu__close-btn {
+    .mobile-menu-close__icon {
         position: absolute;
         top: 56px;
         right: 32px;
-        // background-color: transparent;
-        // border: none;
-        // padding: 0;
+        background-color: transparent;
+        border: none;
+        padding: 0;
     }
     .logo-header-mobile{
         position: absolute;
@@ -194,49 +193,27 @@
     .button-call-mobile {
         display: none;
     }
-    .mobile-menu__close-btn {
+    .mobile-menu-close__icon {
         top: 40px;
-        right: 40px;
     }
 
     .mobile-nav {
-        position: relative;
         margin: 0 auto;
     }
     .mobile-list {
+        text-align: left;
         padding-top: 165px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%)
+        padding-left: 216px;
     }
 
     .mobil-nav__item {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 800;
     font-size: 26px;
-    line-height: 180%;
-    /* or 47px */
-
+    line-height: 1.8;
     letter-spacing: 0.03em;
-
-    color: #FFFFFF;
+    color: var(--white-color)
         }
 }
-
-
-
-
-.mobile-list {
-    margin-bottom: 40px;
-}
-
-.mobile-menu__container {
-    position: relative;
-
-}
-
-
 
 .current {
     color: var(--accent-color);
@@ -259,8 +236,6 @@
 
 }
 
-
-
 .logo__text {
     font-weight: 700;
     font-size: 5px;
@@ -275,15 +250,11 @@
 }
 
 
-
-
 .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .button-call {
     display: none;
@@ -297,8 +268,6 @@
 
 
 
-
-
 @media screen and (max-width: 1679px) {
     .site-nav {
         display: none;
@@ -307,8 +276,8 @@
 }
 
 
-
 @media screen and (min-width: 768px) {
+
     .btn-nav {
         display: flex;
     }
@@ -317,7 +286,6 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 17px;
-    
         display: flex;
         align-items: center;
         text-align: center;
@@ -327,8 +295,6 @@
         padding: 15px 5px;
         border-color: var(--accent-color);
         margin-right: 40px;
-        
-    
         color: var(--accent-color)
             }
 
@@ -336,29 +302,27 @@
 
 
 @media screen and (min-width: 1680px) {
-    .mobile-menu-btn {
+    .button-call {
+        margin-right: 0;
+        padding: 24px 26px;
+    }
+    .mobile-menu-btn__icon {
         display: none;
     }
-
     .site-nav {
         display: flex;
     }
 
 
     .site-nav__item {
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 700;
         font-size: 14px;
-        line-height: 17px;
-        /* identical to box height */
-        
+        line-height: 1.21;
         display: flex;
         align-items: center;
         text-align: center;
         text-transform: uppercase;
-        
-        color: #B9B9B9;
+        color: var(--gray-color);
         margin-right: 40px;
         
 

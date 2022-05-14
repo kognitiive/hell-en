@@ -13,41 +13,41 @@
             </div>
             <div class="btn-nav">
             <ul class="site-nav ul">
-                <li class="site-nav__item"><a href="" class="site-nav__link link current"></a>Studying program</li>
-                <li class="site-nav__item"><a href="" class="site-nav__link link current"></a>about</li>
-                <li class="site-nav__item"><a href="" class="site-nav__link link current"></a>training options</li>
-                <li class="site-nav__item"><a href="" class="site-nav__link link current"></a>contacts</li>
+                <li class="site-nav__item"><a href="" class="current"></a>Studying program</li>
+                <li class="site-nav__item"><a href="" class="current"></a>about</li>
+                <li class="site-nav__item"><a href="" class="current"></a>training options</li>
+                <li class="site-nav__item"><a href="" class="current"></a>contacts</li>
             </ul>
             
             <button class="button-call" type="button">consultation by phone</button>
-            <button type="button" class="mobile-menu-btn" data-menu-open>
-                <svg class="mobile-menu-btn__icon" width="21" height="14">
+            <button type="button" class="modal-link js-open-modal" data-modal="1">
+                <svg class=" mobile-menu-btn__icon" width="21" height="14">
                     <use href="images/symbol-defs.svg#icon-menu"></use>
                 </svg>
             </button>
             </div>
         </nav>
     </div>
-    <a href="#" class="modal-link js-open-modal" data-modal="1">Открыть окно 1</a>
-    <div class="modal mobile-menu" data-modal="1">
-        <div class="mobile-menu__container">
-        <div class="hedader__logo logo-header-mobile">
-            <a class="logo-header logo-header-white" href="">
-                <div class="logo__inner">
-                    Hell<svg class="logo__icon-mobile">
-                        <use href="images/symbol-defs.svg#icon-campfire"></use>
-                    </svg>EN
-                </div>
-                <p class="logo__text-mobile"><span class="logo__span">hellish</span> english</p>
-            </a>
-        </div>
-        <button class="modal__cross" js-modal-close>
+    <!-- <a href="#" class="modal-link js-open-modal" data-modal="1">Открыть окно 1</a> -->
+    <!-- <div class="modal mobile-menu" data-modal="1"> -->
+        <!-- <div class="mobile-menu__container"> -->
+        <div class="mobile-nav modal" data-modal="1">
+            <div class="hedader__logo logo-header-mobile">
+                <a class="logo-header-white" href="">
+                    <div class="logo__inner">
+                        Hell<svg class="logo__icon-mobile">
+                            <use href="images/symbol-defs.svg#icon-campfire"></use>
+                        </svg>EN
+                    </div>
+                    <p class="logo__text-mobile"><span class="logo__span">hellish</span> english</p>
+                </a>
+            </div>
+                <button class="modal__cross js-modal-close" js-modal-close>
             <svg class="mobile-menu-close__icon" width="16" height="16">
                 <use href="images/symbol-defs.svg#icon-cross" ></use>
             </svg>
         </button>
-        <div class="mobile-nav">
-        <ul class="mobile-list">
+            <ul class="mobile-list">
             <li>
                 <a class="mobil-nav__item" href="">Studying program</a>
             </li>
@@ -63,7 +63,9 @@
         </ul>
         <button class="button-call-mobile" type="button">consultation by phone</button>
     </div>
-</div>
-    </div>
+<!-- </div> -->
+
 </header>
+<div class="overlay js-overlay-modal"></div>
+
 

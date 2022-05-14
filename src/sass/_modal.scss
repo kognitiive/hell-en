@@ -28,7 +28,7 @@
 
     /*  Установаем ширину окна  */
     width: 100%;
-    max-width: 500px;
+    height: 100vh;
 
     /*  Центрируем и задаем z-index */
     position: fixed;
@@ -40,44 +40,47 @@
 
     /*  Побочные стили   */
     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
-    text-align: center;
     padding: 30px;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: rgba(17, 21, 24, 0.9);
     transition: 0.3s all;
 }
 
 
-// /* Стили для активных классов подложки и окна */
+/* Стили для активных классов подложки и окна */
 
-// .modal.active,
-// .overlay.active {
-//     opacity: 1;
-//     visibility: visible;
-// }
-
-
-// /* Стили для кнопки закрытия */
-
-// .modal__cross {
-//     width: 15px;
-//     height: 15px;
-//     position: absolute;
-//     top: 20px;
-//     right: 20px;
-//     fill: #444;
-//     cursor: pointer;
-// }
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
 
 
-// /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+/* Стили для кнопки закрытия */
 
-// .modal-link {
-//     padding: 20px;
-//     display: inline-block;
-//     text-decoration: none;
-//     background-color: #414b52;
-//     margin: 10px;
-//     color: #fff;
-//     border-radius: 3px;
-// }
+.modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+.modal-link {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .modal {
+        text-align: start;
+    }
+}
