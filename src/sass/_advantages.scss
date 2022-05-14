@@ -18,17 +18,14 @@
 .advantages {
     padding-top: 40px;
     padding-bottom: 40px;
-  
 }
 
-.advantages-container {
-    min-width: 320px;
-}
 
 .advantages-list__iteam {
     width: 100%;
-    position: relative;
-  
+    display: flex;
+    align-items: center;
+
 
     &::before {
        display: block;
@@ -53,7 +50,7 @@
     &:not(:last-child) {
         margin-bottom: 24px;
 
-        @media screen and (min-width: 767px) {
+        @media screen and (min-width: 768px) {
             margin-bottom: 0;
         }
     }
@@ -63,19 +60,13 @@
 .advantages-list__text {
     font-weight: 700;
     font-size: 14px;
-    line-height: 164.9%;
+    line-height: 1.65;
     color: #111518;
-    position: absolute;
     left: 76px;
-    text-align: justify;
-    top: 50%;
-    transform: translateY(-50%);
-          
+    padding: 7px 0;  
+    margin-left: 12px;
 }
 
-.advantages-list__row {
-    display: block;
-}
 
 @media screen and (max-width: 479px) {
     .advantages-list {
@@ -94,7 +85,6 @@
 
     .advantages-list {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -105,35 +95,35 @@
         &:not(:last-child) {
             margin-right: 21px;
 
-            @media screen and (min-width: 1365px) {
+            @media screen and (min-width: 1680px) {
                 margin-right: 0;
             }
         }
     }
 
     .advantages-list__text {
-        top: 50%;
-        transform: translateY(-50%);
+        margin-left: 15px;
+    
    
     }
 }
 
 // 1366 +
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1680px) {
 
-    .advantages-container {
-        padding-top: 0;
-        padding-bottom: 0;
-        width: 100%;
-    }
+    // .advantages-container {
+    //     padding-top: 0;
+    //     padding-bottom: 0;
+    //     width: 100%;
+    // }
 
     .advantages-list {
         justify-content: start;
     }
 
     .advantages-list__iteam {
-        flex-basis: calc((100% - 225)/3);
+        flex-basis: calc((100% - 225px)/3);
 
         &::before {
             width: 100px;
@@ -144,5 +134,6 @@
 
     .advantages-list__text {
         font-size: 20px;
+        margin-left: -21px;
     }
 }

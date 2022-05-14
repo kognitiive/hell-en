@@ -1,0 +1,140 @@
+
+/* 0-767*/
+
+.guarantee {
+    padding-bottom: 40px;
+    
+ }
+
+.container {
+    // min-width: 320px;
+}
+.guarantee-title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #111518;
+    margin-bottom: 40px;
+    
+}
+
+.guarantee-list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+
+}
+
+.guarantee-list__box {
+    margin-left: 7px;
+}
+
+.guarantee-list__box:not(:last-child) {
+    border-left: 1px dashed #B9B9B9;
+    padding-bottom: 20px; 
+        
+}
+
+.guarantee-list__iteam {
+    display: flex;
+   margin-left: -7px;
+}
+
+
+.guarantee-list__iteam::before {
+    content: " ";
+    width: 15px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/icon-fire.svg");
+    position: absolute;
+   background-position: center;
+  
+}
+
+
+.guarantee-list__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #3D3D3D;
+   margin-left: 35px;
+
+    &--color {
+        color: rgba(255, 107, 9, 1);
+    }
+}
+
+
+
+@media screen and (max-width: 479px) {
+    .guarantee-list {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .guarantee {
+    background: linear-gradient(to top, #F1F1F1 85%, #ffff 25%);
+    }
+}
+
+// 768 +
+
+@media screen and (min-width: 768px) {
+
+    .guarantee-list {
+        padding: 32px 58px 32px 87px;
+        background: #F1F1F1;
+    }
+
+
+    .guarantee-list__text {
+        margin-left: 40px;
+    }
+}
+
+// 1680+
+
+@media screen and (min-width: 1680px) {
+
+    .guarantee {
+       padding-bottom: 80px;
+    }
+
+    .guarantee-title {
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 1.3;
+    }
+
+    .guarantee-list {
+            padding: 60px 278px 60px 280px;
+            width: 100%;
+        }
+        
+        .guarantee-list__iteam::before {
+            width: 22px;
+            height: 30px;
+        }
+
+       .guarantee-list__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        color: #3D3D3D;
+        margin-left: 52px;
+      
+    }
+        .guarantee-list__box {
+        margin-left: 11px;
+        }
+    
+        .guarantee-list__iteam {
+        margin-left: -11px;
+        }
+}
