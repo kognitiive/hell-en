@@ -23,7 +23,7 @@
 <stop offset="0.4922" stop-color="#FF1C74"/>
 <stop offset="1" stop-color="#6C1CD1"/>
 </radialGradient>
-<linearGradient id="paint1_linear_1_2997" x1="15.3419" y1="17.3794" x2="-52.4228" y2="-20.7382" gradientUnits="userSpaceOnUse">
+<!-- <linearGradient id="paint1_linear_1_2997" x1="15.3419" y1="17.3794" x2="-52.4228" y2="-20.7382" gradientUnits="userSpaceOnUse">
 <stop stop-color="#A1B5D8" stop-opacity="0"/>
 <stop offset="0.3094" stop-color="#90A2BD" stop-opacity="0.309804"/>
 <stop offset="0.7554" stop-color="#7C8B9C" stop-opacity="0.756863"/>
@@ -64,7 +64,7 @@
 <stop offset="0.8656" stop-color="#FECB6A"/>
 <stop offset="0.9415" stop-color="#FFD87A"/>
 <stop offset="1" stop-color="#FFDC80"/>
-</linearGradient>
+</linearGradient> -->
 <clipPath id="clip0_1_2997">
 <rect width="40" height="40" fill="white"/>
 </clipPath>
