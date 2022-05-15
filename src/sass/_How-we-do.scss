@@ -4,14 +4,21 @@
 }
 
 .How-we-do__list {
-  width: 280px;
-  margin-right: auto;
-  margin-left: auto;
+  display: grid;
+  grid-template-columns: 280px;
+  justify-content: center;
+  row-gap: 10px;
 }
 
-.How-we-do__item:not(:last-child) {
-  margin-bottom: 10px;
-}
+// .How-we-do__list {
+//   width: 280px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+// .How-we-do__item:not(:last-child) {
+//   margin-bottom: 10px;
+// }
 
 .How-we-do__title {
   margin-bottom: 32px;
@@ -114,25 +121,32 @@
   }
 
   .How-we-do__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    grid-template-columns: 336px 336px;
+    grid-gap: 24px 32px;
   }
 
-  .How-we-do__item:nth-child(2n + 1) {
-    margin-right: 32px;
-  }
+  // .How-we-do__list {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 100%;
+  // }
 
-  .How-we-do__item:not(:last-child) {
-    margin-bottom: 0;
-  }
-  .How-we-do__item:nth-child(-n + 4) {
-    margin-bottom: 24px;
-  }
+  // .How-we-do__item:nth-child(2n + 1) {
+  //   margin-right: 32px;
+  // }
+
+  // .How-we-do__item:not(:last-child) {
+  //   margin-bottom: 0;
+  // }
+  // .How-we-do__item:nth-child(-n + 4) {
+  //   margin-bottom: 24px;
+  // }
 
   .How-we-do__card {
+    padding-left: 22px;
+    padding-right: 22px;
     width: 336px;
     height: 336px;
   }
@@ -141,18 +155,12 @@
     margin-top: 40px;
     margin-bottom: 32px;
   }
-
-  .How-we-do__card {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
 }
 
 // 1680px +
 @media screen and (min-width: 1680px) {
   .How-we-do__title {
     text-align: left;
-
     font-size: 46px;
     margin-bottom: 80px;
   }
@@ -163,31 +171,33 @@
   }
 
   .How-we-do__list {
-    justify-content: space-between;
-  }
-  .How-we-do__item:nth-child(2n + 1) {
-    margin-right: 0px;
+    grid-template-columns: repeat(3, 528px);
+    row-gap: 32px;
   }
 
-  .How-we-do__item:nth-child(-n + 4) {
-    margin-bottom: 0px;
-  }
-  .How-we-do__item:nth-child(-n + 3) {
-    margin-bottom: 32px;
-  }
+  // .How-we-do__list {
+  //   justify-content: space-between;
+  // }
+  // .How-we-do__item:nth-child(2n + 1) {
+  //   margin-right: 0px;
+  // }
+
+  // .How-we-do__item:nth-child(-n + 4) {
+  //   margin-bottom: 0px;
+  // }
+  // .How-we-do__item:nth-child(-n + 3) {
+  //   margin-bottom: 32px;
+  // }
 
   .How-we-do__card {
+    padding-left: 82px;
+    padding-right: 82px;
     width: 528px;
     height: 492px;
   }
 
   .How-we-do__svg {
     margin-top: 90px;
-  }
-
-  .How-we-do__card {
-    padding-left: 82px;
-    padding-right: 82px;
   }
 
   .How-we-do__description {
