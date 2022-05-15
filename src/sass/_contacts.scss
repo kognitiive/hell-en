@@ -16,7 +16,7 @@
         margin: 0 auto 24px;
 
         font-weight: 800;
-        font-size: 14px;
+        font-size: 17px;
         line-height: 1.28;
         letter-spacing: 0.03em;
         text-align: center;
@@ -27,10 +27,29 @@
         margin: 0 auto 40px;
         
         font-weight: 600;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 1.25;   
         text-align: center;
-    
+    }
+    &__btn{
+        width: 280px;
+        height: 48px;
+        padding: 14px 0 14px 0;
+        margin: 40px auto;
+
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.25;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        
+        color: var(--white-color);
+        background-color: var(--accent-color);
+        border: none;
+        cursor: pointer;
     }
 }
 
@@ -39,21 +58,20 @@
 }
 
 .form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    margin: 0 auto;
 
     &__label{
         display: block;
-        margin-bottom: 20px;
-            &:last-child{
-                margin-bottom: 0;
-            }
+        margin-left: auto;
+        margin-right: auto;
+        &-marg{
+            margin-bottom: 20px;
+        }
     }
 
-    &__input{
-        display: block;
-        width: 100%;
+
+    &__input{        
+        width: 280px;
         padding: 15px 0 15px 28px;
   
         font: inherit;
@@ -100,7 +118,7 @@
         font-size: 14px;
         line-height: 1.21;
         }
-        &__btn-marg{
+        &__btn{
             width: 335px;
             margin: 32px auto 0;
         }
@@ -141,7 +159,7 @@
             font-size: 30px;
             line-height: 1.23;
             }
-            &__btn-marg{
+            &__btn{
                 width: 528px;
                 margin-top: 40px;
                 font-size: 14px;
