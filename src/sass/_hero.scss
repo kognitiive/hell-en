@@ -4,7 +4,15 @@
 // }
 .hero {
     padding-top: 40px; 
-    padding-bottom: 60px;  
+    padding-bottom: 60px;
+    
+    @media screen and(min-width:768px) {
+        padding-bottom: 126px;
+    }
+
+    @media screen and(min-width:1680px) {
+        padding-bottom: 264px;
+    }
     // background-image: url(../images/hero-bg-mob.png);
     // @media (min-device-pixel-ratio: 2),
     //             (-webkit-min-device-pixel-ratio: 2), 
@@ -39,6 +47,11 @@
     //     background-position: 80% 0%;
     // }
 }
+.hero__text-all {
+    @media screen and (min-width: 768px) {
+        position: relative;
+    }
+}
 
 .hero__text-all::after {
     background-image: url(../images/hero-bg-mob.png);
@@ -63,9 +76,11 @@
                         (min-resolution: 2dppx) {
         background-image: url(../images/hero-bg-tab@2x.png);
     }
+    position: absolute;
+    top: 0;
+
     width: 375px;
-    height: 320px;
-    margin-left: 10px;   
+    height: 320px; 
 }
     @media screen and (min-width: 1680px) {
         background-image: url(../images/hero-bg.png);
@@ -75,7 +90,8 @@
                     (min-resolution: 2dppx) {
         background-image: url(../images/hero-bg@2x.png);
     }   
-        
+        top: -40px;
+        right: 0;
         width: 840px;
         height: 718px;
     }
@@ -170,7 +186,7 @@
     @media screen and (min-width: 768px) {
         align-items: flex-start;
         margin-top: 48px;
-        // margin-bottom: 0;
+        margin-bottom: 0;
         padding: 16px 44px;
         
     }
@@ -179,6 +195,6 @@
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0.14em;
-        margin-bottom: 304px;
+        // margin-bottom: 304px;
     }
 }
