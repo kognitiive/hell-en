@@ -20,7 +20,7 @@
 <path d="M20.267 4.608h-13.64v1.021h13.64v-1.021z"></path>
 <path d="M20.266 8.416h-11.597v1.021h11.597v-1.021z"></path>
 <path d="M20.267 12.224h-13.64v1.021h13.64v-1.021z"></path>
-<path d="M20.266 16.032h-11.597v1.021h11.597v-1.021z"></path>
+<path d="M20.266 16.032h-11.597v1.02F1h11.597v-1.021z"></path>
 <path d="M20.267 19.84h-13.64v1.021h13.64v-1.021z"></path>
 <path d="M20.266 23.648h-11.597v1.021h11.597v-1.021z"></path>
 <path d="M38.99 4.608h-13.64v1.021h13.64v-1.021z"></path>
@@ -45,9 +45,9 @@
 <path d="M2.281-0.021c-0.157 0-0.284 0.127-0.284 0.284v29.311c0 0.157 0.127 0.284 0.284 0.284s0.284-0.127 0.284-0.284v-29.311c0-0.157-0.127-0.284-0.284-0.284z"></path>
 <path d="M0.718-0.021c-0.157 0-0.284 0.127-0.284 0.284v29.311c0 0.157 0.127 0.284 0.284 0.284s0.284-0.127 0.284-0.284v-29.311c0-0.157-0.127-0.284-0.284-0.284z"></path>
 </symbol>
-<symbol id="icon-cross" viewBox="0 0 32 32">
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M1.778 30.221l28.444-28.444"></path>
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.5556" d="M30.222 30.221l-28.444-28.444"></path>
+<symbol id="icon-cross" viewBox="0 0 18 18">
+<path d="M1 17L17 1" stroke-width="2"/>
+<path d="M17 17L1 1" stroke-width="2"/>
 </symbol>
 <symbol id="icon-menu" viewBox="0 0 21 14">
 <path d="M0 1H20.5" stroke="black" stroke-width="2"/>
