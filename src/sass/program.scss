@@ -243,12 +243,12 @@
     }
 
     .program__terms::before {
-        top: -52px;
-       transform: translate(0, 0);
+    top: -52px;
+    transform: translate(0, 0);
     }
 
 .program__terms:not(:last-child)::after {
     display: none;
 }
-                }
+}
 
