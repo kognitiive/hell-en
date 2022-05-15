@@ -12,10 +12,6 @@
     color: var(--accent-color);
     }
 
-
-
-@media screen and (max-width: 1679px) {
-
     .mobile-menu-close__icon {
         position: absolute;
         top: 20px;
@@ -25,9 +21,8 @@
         border: none;
         padding: 0;
     }
-    
 
-
+@media screen and (max-width: 1679px) {
     .logo-header-white {
         display: block;
         width: 80px;
@@ -95,7 +90,7 @@
         padding-top: 89px;
     }
 
-        .button-call-mobile {
+        .button__modal-2 {
             width: 280px;
             font-weight: 700;
             font-size: 14px;
@@ -113,6 +108,11 @@
     
 }
 
+.modal-close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
 
 @media screen and (min-width: 480px) {
     .logo-header-white {
@@ -202,8 +202,10 @@
     }
     .mobile-list {
         text-align: left;
-        padding-top: 165px;
-        padding-left: 216px;
+        margin: 165px auto;
+        width: 332px;
+
+
     }
 
     .mobil-nav__item {
@@ -277,6 +279,9 @@
 
 
 @media screen and (min-width: 768px) {
+    .button__modal-2 {
+        display: none;
+    }
 
     .btn-nav {
         display: flex;

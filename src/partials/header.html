@@ -19,7 +19,7 @@
                 <li class="site-nav__item"><a href="" class="current"></a>contacts</li>
             </ul>
             
-            <button class="button-call" type="button">consultation by phone</button>
+            <button class="button-call js-open-modal" type="button" data-modal="2">consultation by phone</button>
             <button type="button" class="modal-link js-open-modal" data-modal="1">
                 <svg class=" mobile-menu-btn__icon" width="21" height="14">
                     <use href="images/symbol-defs.svg#icon-menu"></use>
@@ -43,7 +43,7 @@
             <svg class="mobile-menu-close__icon" width="16" height="16">
                 <use href="images/symbol-defs.svg#icon-cross" ></use>
             </svg>
-        </button>
+                </button>
             <ul class="mobile-list">
             <li>
                 <a class="mobil-nav__item" href="">Studying program</a>
@@ -58,8 +58,81 @@
                 <a class="mobil-nav__item" href="">Contacts</a>
             </li>
         </ul>
-        <button class="button-call-mobile" type="button">consultation by phone</button>
+        <button class="button__modal-2 js-open-modal" type="button" data-modal="2">consultation by phone</button>
+
     </div>
+    <div class="form-nav modal modal-second backdrop is-hidden overlay" data-modal="2">
+        <form class="contact-form">
+            <div class="hedader__logo logo-header-mobile">
+                <a class="logo-header-white" href="">
+                    <div class="logo__inner">
+                        Hell<svg class="logo__icon-mobile">
+                            <use href="images/symbol-defs.svg#icon-campfire"></use>
+                        </svg>EN
+                    </div>
+                    <p class="logo__text-mobile"><span class="logo__span">hellish</span> english</p>
+                </a>
+            </div>
+                <button class="modal__cross js-modal-close" js-modal-close>
+            <svg class="mobile-menu-close__icon" width="16" height="16">
+                <use href="images/symbol-defs.svg#icon-cross" ></use>
+            </svg>
+                </button>
+            <p class="form-head">Leave your details, we will call you back</p>
+
+                <label class="contact-form-field">
+                    <span class="contacts-name-modal">Name</span> 
+                    <span class="contact-form-input-wrapper">
+                        <input name="user-name" class="contact-form-input" type="text">
+                        <svg class="contact-form-icon" width="18" height="18">
+                            <use href="images/symbol-defs.svg#icon-person-black">
+                            </use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contacts-name-modal">Telephone</span>
+                    <span class="contact-form-input-wrapper">
+                    <input name="user-phone" class="contact-form-input" type="tel">
+                    <svg class="contact-form-icon" width="18" height="18">
+                        <use href="images/symbol-defs.svg#icon-phone-black">
+                        </use>
+                    </svg>
+                </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contacts-name-modal">Mail</span> 
+                    <span class="contact-form-input-wrapper">
+                    <input name="user-mail" class="contact-form-input" type="text">
+                    <svg class="contact-form-icon" width="18" height="18">
+                        <use href="images/symbol-defs.svg#icon-email-black">
+                        </use>
+                    </svg>
+                </span>
+                    </label>
+                        <label class="contact-form-field">
+                    <span class="contacts-name-modal">
+                        Comment</span> 
+                    <textarea 
+                    name="user-message" 
+                    class="contact-form-message" 
+                    placeholder="Enter text"
+                    ></textarea>
+                </label>
+                <div class="contact-form-checkbox-wrapper">
+                    <input 
+                    name="accept-policy" 
+                    type="checkbox" 
+                    class="contact-form-checkbox visually-hidden" 
+                    id="policy-checkbox" 
+                    required 
+                    />
+                    <label for="policy-checkbox" class="contact-form-checkbox-label"
+                    >I agree with the newsletter and accept&nbsp;&nbsp;<a href="" class="akt" >Agreement conditions</a></label>
+                </div>
+                <button type="submit" class="contact-form-submit-btn">Send</button>
+            </form>
+            </div>
 </header>
 <div class="overlay js-overlay-modal"></div>
 
