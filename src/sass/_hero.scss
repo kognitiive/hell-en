@@ -65,7 +65,9 @@
     }
     width: 375px;
     height: 320px;
-    margin-left: 10px;   
+    margin-left: 10px; 
+    
+    
 }
     @media screen and (min-width: 1680px) {
         background-image: url(../images/hero-bg.png);
@@ -172,7 +174,6 @@
         margin-top: 48px;
         // margin-bottom: 0;
         padding: 16px 44px;
-        
     }
     @media screen and (min-width: 1680px) {
         padding: 27px 70px;
