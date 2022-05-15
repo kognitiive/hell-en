@@ -1,0 +1,106 @@
+
+/* 0-767*/
+
+.guarantee {
+    padding-bottom: 40px;
+    background: linear-gradient(to bottom, var(--white-color) 14.7%, var(--wg-gray-color) 14.7%);
+
+    @media screen and (min-width:768px) {
+        background: var(--white-color);
+        padding-bottom: 0;
+    }
+ }
+
+
+.guarantee-title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-color);
+    margin-bottom: 40px;
+
+    @media screen and (min-width:1680px) {
+        font-size: 46px;
+    }
+    
+}
+
+.guarantee-list {
+    padding-top: 40px;
+    width: 280px;
+    margin: 0 auto;
+
+    @media screen and (min-width:768px) {
+        width: 100%;
+        background: var(--wg-gray-color);
+        padding: 32px 45px 32px 65px;
+    }
+
+    @media screen and (min-width:1680px) {
+        padding: 60px 250px;
+    }
+
+}
+
+.guarantee-list__iteam {
+    position: relative;
+    padding-left: 30px;
+
+    @media screen and (min-width:768px) {
+        padding-left: 25px;
+    }
+
+    &:not(:last-child) {
+        padding-bottom: 24px;
+        border-left: 1px dashed #B9B9B9;
+
+        @media screen and (min-width:768px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+
+        content: '';
+        display: block;
+        left: -7px;
+
+        width: 15px;
+        height: 22px;
+        background-repeat: no-repeat;
+        background-image:  url("../images/icon-fire.svg");
+
+        @media screen and (min-width:1680px) {
+            background-image: url("../images/icon-fire-desk.svg");
+            left: -11px;
+            width: 22px;
+            height: 30px;
+        }
+    }
+}
+
+.guarantee-list__text {
+    display: inline-block;
+    width: 244px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 1.67;
+    color: var(--wg-black-color);
+
+    &--color {
+        color: rgba(255, 107, 9, 1);
+    }
+
+    @media screen and (min-width:768px) {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    @media screen and (min-width:1680px) {
+        width: 100%;
+        font-size: 19px;
+    }
+}
