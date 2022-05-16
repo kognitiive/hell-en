@@ -3,30 +3,15 @@
     padding-bottom: 40px;
 }
 
-.logo__icon {
-    width: 14.2px;
-    height: 19.3px;
-}
 
-.current {
-    color: var(--accent-color);
-    }
-
-    .mobile-menu-close__icon {
-        position: absolute;
-        top: 20px;
-        stroke: var(--white-color);
-        right: 20px;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-    }
-
-@media screen and (max-width: 1679px) {
-    .logo-header-white {
-        color: var(--white-color)
-    
-    }
+.mobile-menu-close__icon {
+    position: absolute;
+    top: 20px;
+    stroke: var(--white-color);
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -34,31 +19,8 @@
     .mobile-list {
         margin-bottom: 40px;
     }
-    .logo__text {
-        font-weight: 700;
-        font-size: 5px;
-        line-height: 1.2;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--black-color);
-    }
-    .logo__icon {
-        width: 14.2px;
-        height: 19.3px;
-    }
-    .logo {
-        display: block;
-        width: 80px;
-        font-weight: 800;
-        font-size: 17px;
-        line-height: 1.23;
-        letter-spacing: 0.08em;
-        color: var(--black-color);
-    }
-    .logo__text-mobile {
+    
 
-        color: var(--white-color)
-    }
     .logo__icon-mobile {
         width: 14.2px;
         height: 19.3px;
@@ -80,7 +42,7 @@
         padding-top: 89px;
     }
 
-        .button__modal-2 {
+    .button__modal-2 {
             width: 280px;
             font-weight: 700;
             font-size: 14px;
@@ -104,49 +66,14 @@
     padding: 0;
 }
 
-@media screen and (min-width: 480px) {
-    .logo-header-white {
-        color: var(--white-color)
-    }
-
-}
-
 @media screen and (min-width: 768px) {
 
-    .logo__text {
-        font-weight: 700;
-        font-size: 8px;
-        line-height: 10px;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--black-color);
-    }
-    .logo__icon {
-        width: 22px;
-        height: 30px;
-    }
-
-    .logo {
-        display: block;
-        width: 125px;
-        height: 45px;
-        font-weight: 800;
-        font-size: 26px;
-        line-height: 1.23;
-        letter-spacing: 0.04em;
-        color: var(--black-color);
-    }
-    .logo__text-mobile {
-        color: var(--white-color)
-    }
+    
     .logo__icon-mobile {
         width: 22px;
         height: 30px;
     }
 
-    .logo-header-white {
-        color: var(--white-color);
-    }
     .mobile-menu-close__icon {
         position: absolute;
         top: 56px;
@@ -276,6 +203,14 @@
     background-color: transparent;
     border: none;
     padding: 0;
+}
+
+.logo-header-white {
+    color: var(--white-color)
+}
+
+.logo__text-mobile {
+    color: var(--white-color)
 }
 
 
