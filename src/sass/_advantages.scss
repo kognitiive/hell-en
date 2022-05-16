@@ -1,0 +1,129 @@
+
+
+.viually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* 0-767*/
+
+.advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.advantages-list__iteam {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+    &::before {
+       display: block;
+        content: " ";
+        width: 59px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+
+    &:nth-child(1)::before {
+       background-image: url("../images/advantages-icon1.svg");
+    }
+    &:nth-child(2)::before {
+        background-image: url("../images/advantages-icon2.svg");
+    }
+    &:nth-child(3)::before {
+        background-image: url("../images/advantages-icon3.svg");
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.advantages-list__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--black-color);
+    left: 76px;
+    padding: 7px 0;  
+    margin-left: 12px;
+}
+
+
+// 768 +
+
+@media screen and (min-width: 768px) {
+
+    .advantages {
+        padding-bottom: 80px;
+    }
+
+    .advantages-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .advantages-list__iteam {
+        flex-basis: calc((100% - 42px)/3);
+        
+
+        &:not(:last-child) {
+            margin-right: 21px;
+
+            @media screen and (min-width: 1680px) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .advantages-list__text {
+        margin-left: 15px;
+    
+   
+    }
+}
+
+// 1366 +
+
+@media screen and (min-width: 1680px) {
+
+ 
+
+    .advantages-list {
+        justify-content: start;
+        justify-content: space-between;
+    }
+
+    .advantages-list__iteam {
+        flex-basis: calc((100% - 225px)/3);
+
+        &::before {
+            width: 100px;
+            height: 102px;
+        }
+  
+    }
+
+    .advantages-list__text {
+        font-size: 20px;
+        margin-left: -21px;
+    }
+}
