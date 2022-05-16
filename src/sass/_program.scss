@@ -1,18 +1,30 @@
 .program {
+    position: relative;
     background-color: var(--black-color);
     padding-top: 40px;
     padding-bottom: 145px;
-    background-image: url(../images/program-background-mobile.png);
-    background-repeat: no-repeat;
-    background-position: right bottom 40px;
+
+    &::after {
+        position: absolute;
+        bottom: 40px;
+        right: 0;
+        content: "";
+        display: block;
+        width: 150px;
+        height: 137px;
+        background-image: url(../images/program-background-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 150px 137px;
+    }
 }
 
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .program {
+    .program::after {
         background-image: url(../images/program-background-mobile@2x.png);
+        
     }
 }
 
@@ -119,17 +131,24 @@
     .program {
         padding-top: 60px;
         padding-bottom: 180px;
+
+        &::after {
+        width: 368px;
+        height: 268px;
+        bottom: 80px;
         background-image: url(../images/program-background-tablet.png);
-        background-position: right bottom 80px;
+        background-size: 368px 268px;
+
+        // background-position: right bottom 80px;}
+    }
     }
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .program {
-            background-image: url(../images/program-background-tablet@2x.png);
-            background-size: contain;
+        .program::after {
+            background-image: url(../images/program-background-tablet@2x.png);  
         }
     }
 
@@ -175,8 +194,15 @@
         margin-right: auto;
         padding-top: 80px;
         padding-bottom: 238px;
-        background-image: url(../images/program-background-desktop.png);
-        background-position: top 657px right 996px;
+
+        &::after {
+            bottom: -129px;
+            left: 0;
+            width: 684px;
+            height: 510px;
+            background-image: url(../images/program-background-desktop.png);
+            background-size: 684px 510px;
+        }
 
         &::before {
             position: absolute;
@@ -195,10 +221,11 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .program {
+        .program::after {
             background-image: url(../images/program-background-desktop.png);
         }
     }
+
     .program__classes {
         display: block;
     }
