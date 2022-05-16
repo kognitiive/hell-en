@@ -128,8 +128,8 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .program {
-            background-image:
-                url(../images/program-background-tablet@2x.png);
+            background-image: url(../images/program-background-tablet@2x.png);
+            background-size: contain;
         }
     }
 
