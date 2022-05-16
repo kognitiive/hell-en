@@ -1,7 +1,3 @@
-// .hero__container {          
-//     outline: 2px solid tomato; 
-       
-// }
 .hero {
     position: relative;
     padding-top: 40px; 
@@ -98,8 +94,6 @@
         height: 718px;
     }
 }
-
-
 .hero__title {
     font-weight: 800;
     font-size: 20px;
@@ -110,11 +104,9 @@
     @media screen and (min-width: 768px) {
         font-size: 26px;
         display: block;
-        width: 318px;
-        
+        width: 318px;        
     }
-    @media screen and (min-width: 1680px) {
-        
+    @media screen and (min-width: 1680px) {        
         font-size: 58px;
         width: 560px;
     }
@@ -128,11 +120,7 @@
     color: var(--gray-color);
     display: block;
     width: 280px;  
-    @media screen and (min-width: 768px) {
-        
-    }
-    @media screen and (min-width: 1680px) {
-        
+       @media screen and (min-width: 1680px) {        
         font-size: 20px;
         line-height: 1.65;
     }
@@ -145,12 +133,7 @@
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.08em;
-    @media screen and (min-width: 768px) {
-        
-       
-        
-    }
-    @media screen and (min-width: 1680px) {
+        @media screen and (min-width: 1680px) {
         display: inline;
         font-size: 20px;
     }
@@ -161,10 +144,6 @@
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.08em;
-    @media screen and (min-width: 768px) {
-       
-        
-    }
     @media screen and (min-width: 1680px) {
         display: inline;
         color: var(--black-color);
@@ -189,15 +168,13 @@
         align-items: flex-start;
         margin-top: 48px;
         margin-bottom: 0;
-        padding: 16px 44px;
-        
+        padding: 16px 44px;        
     }
     @media screen and (min-width: 1680px) {
         padding: 27px 70px;
         font-size: 14px;
         line-height: 1.2;
         letter-spacing: 0.14em;
-        // margin-bottom: 304px;
     }
 }
 .wow {
