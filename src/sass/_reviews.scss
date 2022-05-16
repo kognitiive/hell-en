@@ -213,6 +213,7 @@ background-image: url(../images/reviews__img/Ellipse_15_1x-min.png);
     position: absolute;
     bottom: 150px;
     z-index: 1;
+    cursor: pointer;
     // @media screen and (min-width: 768px) {
     //         bottom: 210px;
     //     }
@@ -256,7 +257,7 @@ background-image: url(../images/reviews__img/Ellipse_15_1x-min.png);
 }
 .reviews__none-btn {
     bottom: 10px;
-
+    cursor: pointer;
     @media screen and (min-width: 768px) {
         display: none;
         position: absolute;
