@@ -50,5 +50,15 @@
     ></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script>
+      jQuery(document).ready(function() {
+      jQuery("a.scrollto").click(function () {
+      elementClick = jQuery(this).attr("href")
+      destination = jQuery(elementClick).offset().top;
+      jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+      return false;
+      });
+      });
+      </script>
   </body>
 </html>
