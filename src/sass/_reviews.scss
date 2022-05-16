@@ -4,6 +4,11 @@
 }
 .reviews__slick {
     position: relative;
+
+    @media screen and(min-width:1680px) {
+        width: 1088px;
+        margin: 0 auto;
+    }
 }
 .reviews__title {
     font-family: 'Montserrat';
@@ -59,7 +64,6 @@
     }
 
     @media screen and (min-width: 1680px) {
-        width: 1088px;
         padding: 60px;
         margin-bottom: 40px;
     }
