@@ -1,4 +1,5 @@
 @media screen and (max-width: 767px) {
+
     .modal-second {
 
         /* Скрываем окна  */
@@ -25,6 +26,50 @@
         transition: 0.3s all;
     }
     
+}
+
+@media screen and (max-width: 479px) {
+    .contact-form-checkbox-label::before {
+        border: 2px solid #757575;
+        display: inline-block;
+        content: "";
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        margin-right: 8px;
+        
+            .contact-form-checkbox:checked + & {
+            background-color: var(--accent-color);
+            box-shadow: inset 0 0 0 2px #ffff;
+        }
+            .contact-form-checkbox:focus + & {
+            border: 2px solid var(--accent-color);
+        
+        }
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+    .contact-form-checkbox-label::before {
+        border: 2px solid #757575;
+        display: inline-block;
+        content: "";
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+        margin-right: 8px;
+        
+            .contact-form-checkbox:checked + & {
+            background-color: var(--accent-color);
+            box-shadow: inset 0 0 0 2px #ffff;
+        }
+            .contact-form-checkbox:focus + & {
+            border: 2px solid var(--accent-color);
+        
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -167,24 +212,24 @@
 
     color: #757575;
 
-    &::before {
-        border: 2px solid #757575;
-        display: inline-block;
-        content: "";
-        width: 16px;
-        height: 16px;
-        cursor: pointer;
-        margin-right: 8px;
+    // &::before {
+    //     border: 2px solid #757575;
+    //     display: inline-block;
+    //     content: "";
+    //     width: 16px;
+    //     height: 16px;
+    //     cursor: pointer;
+    //     margin-right: 8px;
         
-            .contact-form-checkbox:checked + & {
-            background-color: var(--accent-color);
-            box-shadow: inset 0 0 0 2px #ffff;
-        }
-            .contact-form-checkbox:focus + & {
-            border: 2px solid var(--accent-color);
+    //         .contact-form-checkbox:checked + & {
+    //         background-color: var(--accent-color);
+    //         box-shadow: inset 0 0 0 2px #ffff;
+    //     }
+    //         .contact-form-checkbox:focus + & {
+    //         border: 2px solid var(--accent-color);
         
-        }
-    }
+    //     }
+    // }
     
 }
 

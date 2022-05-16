@@ -3,6 +3,16 @@
     padding-bottom: 40px;
 }
 
+.site-nav__item:hover,
+.site-nav__item:focus {
+    color: var(--accent-color);
+}
+
+.mobil__nav-item:hover,
+.mobil-nav__item:focus {
+    color: var(--accent-color);
+}
+
 .logo__icon {
     width: 14.2px;
     height: 19.3px;
@@ -81,6 +91,7 @@
     }
 
         .button__modal-2 {
+            cursor: pointer;
             width: 280px;
             font-weight: 700;
             font-size: 14px;
@@ -91,7 +102,7 @@
             text-transform: uppercase;
             background-color: transparent;
             padding: 15px 5px;
-            border-color: var(--accent-color);
+            border: 2px solid;
             margin-right: 40px;
             color: var(--accent-color)
                 }
@@ -163,6 +174,7 @@
 
 
     .button-call-mobile {
+        
         display: none;
     }
     .mobile-menu-close__icon {
@@ -267,7 +279,7 @@
         text-transform: uppercase;
         background-color: transparent;
         padding: 15px 5px;
-        border-color: var(--accent-color);
+        border: 2px solid;
         margin-right: 40px;
         color: var(--accent-color)
             }
@@ -277,6 +289,8 @@
 
 @media screen and (min-width: 1680px) {
     .button-call {
+        border: 2px solid;
+        cursor: pointer;
         margin-right: 0;
         padding: 24px 26px;
     }
