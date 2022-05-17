@@ -60,10 +60,10 @@
     }
     content: "";
     background-size: contain;
-    display: inline-block;
+    display: block;
     width: 208px;
     height: 178px;
-    margin-left: 40px;
+    margin: 0 auto;
 
     @media screen and (min-width: 768px) {
         background-image: url(../images/hero-bg-tab.png);
@@ -73,9 +73,13 @@
                         (min-resolution: 2dppx) {
         background-image: url(../images/hero-bg-tab@2x.png);
     }
+
+    display: inline-block;
     position: absolute;
     z-index: 3;
     top: 0;
+
+    margin-left: 40px;
 
     width: 375px;
     height: 320px; 
@@ -162,9 +166,19 @@
     cursor: pointer;
     padding: 14px 56px;
     border: none;
-    margin: 40px 0;
-    display: inline-flex;
+    margin: 40px auto;
+    display: block;
+
+    transition: color var(--transition),  var(--transition);
+
+    // &:hover,
+    // &:focus {
+    //     color: var(--accent-color);
+    //     background-color: var(--white-color);
+    // }
+
     @media screen and (min-width: 768px) {
+        display: inline-flex;
         align-items: flex-start;
         margin-top: 48px;
         margin-bottom: 0;

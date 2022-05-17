@@ -61,20 +61,27 @@
     }
 
         .button__modal-2 {
+            display: block;
+            margin: 0 auto;
             cursor: pointer;
             width: 280px;
             font-weight: 700;
             font-size: 14px;
             line-height: 1.21;
-            align-items: center;
-            text-align: center;
             letter-spacing: 0.14em;
             text-transform: uppercase;
             background-color: transparent;
             padding: 15px 5px;
             border: 2px solid;
-            margin-right: 40px;
-            color: var(--accent-color)
+            color: var(--accent-color);
+
+            transition: color var(--transition), background-color var(--transition);
+
+            &:hover,
+            &:focus {
+                color: var(--white-color);
+                background-color: var(--accent-color);
+            }
                 }
     
 }
@@ -146,6 +153,12 @@
     line-height: 1.23;
     letter-spacing: 0.04em;
     color: var(--black-color);
+    transition: color var(--transition);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 
     @media screen and(min-width:768px) {
         font-size: 26px;
@@ -182,6 +195,9 @@
 
         color: var(--black-color);
 
+        transition: color var(--transition);
+
+
         @media screen and(min-width:768px) {
             font-weight: 700;
             font-size: 8px;
@@ -206,6 +222,11 @@
         }
 
     }
+}
+
+.logo:hover .logo__text,
+.logo:focus .logo__text {
+    color: var(--accent-color);
 }
 
 
@@ -256,6 +277,7 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 17px;
+        cursor: pointer;
         display: flex;
         align-items: center;
         text-align: center;
@@ -265,7 +287,15 @@
         padding: 15px 5px;
         border: 2px solid;
         margin-right: 40px;
-        color: var(--accent-color)
+        color: var(--accent-color);
+
+        transition: color var(--transition), background-color var(--transition);
+        
+        &:hover,
+        &:focus {
+            color: var(--white-color);
+            background-color: var(--accent-color);
+        }
             }
 
 }
