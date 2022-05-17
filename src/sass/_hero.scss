@@ -158,14 +158,15 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.25;
-    align-items: center;
+    text-align: center;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
-    padding: 14px 56px;
+    padding: 14px 14px;
     border: none;
+    width: 280px;
     margin: 40px auto;
     display: block;
 
@@ -179,12 +180,15 @@
 
     @media screen and (min-width: 768px) {
         display: inline-flex;
-        align-items: flex-start;
+        justify-content: center;
+        // align-items: flex-start;
         margin-top: 48px;
         margin-bottom: 0;
-        padding: 16px 44px;        
+        width: 260px;
+        padding: 16px 16px;        
     }
     @media screen and (min-width: 1680px) {
+        width: 354px;
         padding: 27px 70px;
         font-size: 14px;
         line-height: 1.2;
