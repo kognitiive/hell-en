@@ -13,10 +13,10 @@
             </div>
             <div class="btn-nav">
             <ul class="site-nav ul">
-                <li class="site-nav__item"><a href=""></a>Studying program</li>
-                <li class="site-nav__item"><a href=""></a>about</li>
-                <li class="site-nav__item"><a href=""></a>training options</li>
-                <li class="site-nav__item"><a href=""></a>contacts</li>
+                <li class="site-nav__item"><a class="site-nav__item scrollto"  href="#program">Studying program</a></li>
+                <li class="site-nav__item"><a class="site-nav__item scrollto" href="#about">about</a></li>
+                <li class="site-nav__item"><a class="site-nav__item scrollto" href="#training">training options</a></li>
+                <li class="site-nav__item"><a class="site-nav__item scrollto" href="#registration">contacts</a></li>
             </ul>
             <button class="button-call js-open-modal" type="button" data-modal="2">consultation by phone</button>
             <button type="button" class="modal-link js-open-modal" data-modal="1">
@@ -45,16 +45,16 @@
                 </button>
             <ul class="mobile-list">
             <li>
-                <a class="mobil-nav__item" href="">Studying program</a>
+                <a class="mobil-nav__item js-modal-close" href="#program">Studying program</a>
             </li>
             <li>
-                <a class="mobil-nav__item" href="">About</a>
+                <a class="mobil-nav__item js-modal-close" href="#about">About</a>
             </li>
             <li>
-                <a class="mobil-nav__item" href="">Training options</a>
+                <a class="mobil-nav__item js-modal-close" href="#training">Training options</a>
             </li>
             <li>
-                <a class="mobil-nav__item" href="">Contacts</a>
+                <a class="mobil-nav__item js-modal-close" href="#registration">Contacts</a>
             </li>
         </ul>
         <button class="button__modal-2 js-open-modal" type="button" data-modal="2">consultation by phone</button>
@@ -102,7 +102,7 @@
                 <label class="contact-form-field">
                     <span class="contacts-name-modal">Mail</span> 
                     <span class="contact-form-input-wrapper">
-                    <input name="user-mail" class="contact-form-input" type="text">
+                    <input name="user-mail" class="contact-form-input" type="mail">
                     <svg class="contact-form-icon" width="18" height="18">
                         <use href="images/symbol-defs.svg#icon-email-black">
                         </use>

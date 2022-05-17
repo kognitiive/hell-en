@@ -1,26 +1,38 @@
 
 .reviews {
-    // background-color: aquamarine;
     padding: 40px 0;
 }
 .reviews__slick {
     position: relative;
+
+    @media screen and(min-width:1680px) {
+        width: 1088px;
+        margin: 0 auto;
+    }
 }
 .reviews__title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
-    line-height: calc(26 / 20);
+    line-height: 1.3;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #111518;
+    color: var(--black-color);
     width: 280px;
+
     margin: 0 auto;
     margin-bottom: 24px;
+
     @media screen and (min-width: 768px) {
         margin-bottom: 40px;
     }
+}
+
+.reviews__link {
+    display: block;
+    width: 30px;
+    margin: 0 auto;
 }
 
 .reviews__img {
@@ -31,45 +43,49 @@
         width: 150px;
         height: 150px;
         margin-bottom: 26px;
-        }
+    }
     
 }
+
 .reviws__caver {
     margin-bottom: 40px;
+
     @media screen and (min-width: 768px) {
-    display: flex;
-    position: relative;
-    width: 704px;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    margin-bottom: 20px;
-    background: #FFFFFF;
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        display: flex;
+
+        width: 704px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 50px;
+        margin-bottom: 20px;
+
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     }
-        @media screen and (min-width: 1680px) {
-        width: 1088px;
-        margin: auto;
-        justify-content: flex-start;
+
+    @media screen and (min-width: 1680px) {
         padding: 60px;
         margin-bottom: 40px;
-        }
+    }
 }
 .reviews__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 90px;
+    margin: 0  auto;
     margin-bottom: 30px;
+
     @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    margin-right: 44px;
+        display: inline-block;
+        width: 150px;
+        margin-right: 44px;
+        margin-bottom: 0;
     }
 }
 .reviews__article {
     width: 240px;
-    margin:auto;
+    margin:0 auto;
+
     @media screen and (min-width: 768px) {
+        display: inline-block;
         margin: 0;
         width: 412px;
     }
@@ -134,15 +150,12 @@
     color: #FF6B09;
     text-decoration:underline;
 }
-// .slick-active {
 
-//     border: px solid #FF6B09;
-// }
 .slick-dots {
     display: flex;
     margin: auto;
-    // padding: 1rem 0;
     align-items: center;
+    justify-content: center;
     button {
         display: block;
         width: 54px;
@@ -150,130 +163,137 @@
         padding: 0;
         border: none;
         border-radius: 100%;
-        // background-image: url(../images/reviews__img/Ellipse_11_1x-min.png);
+     
         background-color: transparent;
         text-indent: -9999px;
     }
-    .slick-active {
+
+.slick-active {
+    @media screen and(min-width:768px) {
         border-radius: 100%;
-        border: 1px solid #FF6B09;
+            outline: 1px solid #FF6B09;
     }
-    @media screen and (max-width: 767px) {
-    width: 200px;
-    overflow: scroll;
-    }
-        @media screen and (min-width: 768px) {
-        justify-content: center;
-        }
+    
+}
+
 }
 .slick-dots li {
-    margin-right: 12px;
+    margin: 0 6px;
+
+    @media screen and (min-width:768px) {
+        margin: 0 16px;
+    }
 }
+
+.slick-dots.slick-slider {
+    width: 75%;
+
+    @media screen and(min-width:768px) {
+        width: 100%;
+    }
+}
+
 .slick-dots li:nth-child(1) {
-        background-image: url(../images/reviews__img/Ellipse_9_1x-min.png);
+        background-image: url(../images/reviews__img/Ellipse_9_2x-min.png);
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
 }
 .slick-dots li:nth-child(2) {
-background-image: url(../images/reviews__img/Ellipse_10_1x-min.png);
+background-image: url(../images/reviews__img/Ellipse_10_2x-min.png);
     background-repeat: no-repeat;    
     background-position: center;
+    background-size: contain;
 }
 .slick-dots li:nth-child(3) {
-background-image: url(../images/reviews__img/Ellipse_11_1x-min.png);
+background-image: url(../images/reviews__img/Ellipse_11_2x-min.png);
     background-repeat: no-repeat;    
     background-position: center;
+    background-size: contain;
 }
 .slick-dots li:nth-child(4) {
-background-image: url(../images/reviews__img/Ellipse_12_1x-min.png);
+background-image: url(../images/reviews__img/Ellipse_12_2x-min.png);
     background-repeat: no-repeat;    
     background-position: center;
+    background-size: contain;
 }
 .slick-dots li:nth-child(5) {
-background-image: url(../images/reviews__img/Ellipse_13_1x-min.png);
+background-image: url(../images/reviews__img/Ellipse_13_2x-min.png);
     background-repeat: no-repeat;    
     background-position: center;
+    background-size: contain;
 }
 .slick-dots li:nth-child(6) {
-background-image: url(../images/reviews__img/Ellipse_8_150_1x-min.png);
+background-image: url(../images/reviews__img/Ellipse_8_2x-min.png);
     background-repeat: no-repeat;    
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     
 }
 .slick-dots li:nth-child(7) {
-background-image: url(../images/reviews__img/Ellipse_15_1x-min.png);
+background-image: url(../images/reviews__img/Ellipse_15_2x-min.png);
     background-repeat: no-repeat;    
     background-position: center;
+    background-size: contain;
 }
-.slider-previous-btn,
+.slider-previous-btn {
+    position: absolute;
+    display: none;
+    border: none;
+    background-color: transparent;
+    fill: #FF6B09;
+    
+    bottom: 50%;
+    left: 4px;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
 .slider-next-btn {
+    position: absolute;
+    display: none;
+    border: none;
+    background-color: transparent;
+    fill: #FF6B09;
+    
+    bottom: 50%;
+    right: 4px;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.dots-previous-btn {
+    display: none;
     border: none;
     background-color: transparent;
     fill: #FF6B09;
     position: absolute;
-    bottom: 150px;
+    bottom: 5px;
+    left: 3%;
     z-index: 1;
-    // @media screen and (min-width: 768px) {
-    //         bottom: 210px;
-    //     }
-    
-        @media screen and (min-width: 1680px) {
-            bottom: 200px;
+
+    @media screen and (man-width: 767px) {
+            display: block;
         }
 }
-.reviews__none-btn-1 {
-    @media screen and (max-width: 767px) {
-        display: none;
-            position: absolute;
-            white-space: nowrap;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            border: 0;
-            padding: 0;
-            clip: rect(0 0 0 0);
-            clip-path: inset(50%);
-            margin: -1px;
+
+.dots-next-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    fill: #FF6B09;
+    position: absolute;
+    bottom: 5px;
+    right: 3%;
+    z-index: 1;
+
+    @media screen and (man-width: 767px) {
+        display: block;
     }
 }
-.slider-previous-btn-after {
-    left: -3px;
-        @media screen and (min-width: 1680px) {
-            left: -50px;
-        }
-}
-.slider-next-btn-after {
-    right: -3px;
-        @media screen and (min-width: 1680px) {
-            right: -50px;
-        }
-}
-.slider-previous-btn-pre {
-    left: 20px;
-}
-.slider-next-btn-pre {
-    right: 20px;
-}
-.reviews__none-btn {
-    bottom: 10px;
-
-    @media screen and (min-width: 768px) {
-        display: none;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        margin: -1px;
-    }
-
-}
-        // .slider-previous-btn {
-        //     background-image: url(../images/symbol-defs.svg#left-arrow);
-        //     background-size:contain;
-        //     background-color: transparent;
-        // }
