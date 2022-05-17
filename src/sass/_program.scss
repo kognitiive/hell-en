@@ -24,10 +24,8 @@
 (min-resolution: 2dppx) {
     .program::after {
         background-image: url(../images/program-background-mobile@2x.png);
-        
     }
 }
-
 
 .program__title {
     font-weight: 800;
@@ -50,16 +48,15 @@
     color: var(--accent-color);
 
     &::before {
-            position: absolute;
-            bottom: 50%;
-            left: 0;
-            content: "";
-            display: inline-block;
-            width: 12px;
-            height: 1px;
-            background-color: var(--accent-color);
-    
-        }
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 1px;
+        background-color: var(--accent-color);
+    }
 }
 
 .program__themes_description {
@@ -82,7 +79,7 @@
 }
 
 .program__general-list {
-    padding-left: 41px;  
+    padding-left: 41px;
 }
 
 .program__terms {
@@ -90,34 +87,34 @@
     padding-left: 26px;
 
     &:not(:last-child) {
-    padding-bottom: 40px;
-}
+        padding-bottom: 40px;
+    }
 
     &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, 50%);
-    content: "";
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    z-index: 1;
-}
-    &:not(:last-child)::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 1px;
-    height: 100%;
-    top: 12px;
-    left: 0;
-    background-color: var(--white-color);
-}
-}
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, 50%);
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
+        z-index: 1;
+    }
 
+    &:not(:last-child)::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        top: 12px;
+        left: 0;
+        background-color: var(--white-color);
+    }
+}
 
 .program__classes_item:not(:last-child) {
     margin-bottom: 4px;
@@ -133,25 +130,21 @@
         padding-bottom: 180px;
 
         &::after {
-        width: 368px;
-        height: 268px;
-        bottom: 80px;
-        background-image: url(../images/program-background-tablet.png);
-        background-size: 368px 268px;
-    }
+            width: 368px;
+            height: 268px;
+            bottom: 80px;
+            background-image: url(../images/program-background-tablet.png);
+            background-size: 368px 268px;
+        }
     }
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
- 
-        
-           
-
-        .program {
+        .program::after {
             background-image: url(../images/program-background-tablet@2x.png);
-          }
+        }
     }
 
     .program__title {
@@ -159,10 +152,11 @@
         text-align: left;
     }
 
-    .program__general-list{
+    .program__general-list {
         margin-left: 88px;
         padding-left: 0;
     }
+
     .program__classes {
         display: flex;
         flex-wrap: wrap;
@@ -170,25 +164,22 @@
 
     .program__classes_item {
         flex-basis: 156px;
-        
+
         &:not(:last-child) {
-        margin-right: 32px;
-    }
+            margin-right: 32px;
+        }
 
         &:not(:last-child) {
             margin-bottom: 0;
         }
-        }
-        
-        .program__terms {
-            padding-left: 113px;
-        }
-
-
     }
 
-@media screen and (min-width:1680px) {
+    .program__terms {
+        padding-left: 113px;
+    }
+}
 
+@media screen and (min-width:1680px) {
     .program {
         position: relative;
         max-width: 1680px;
@@ -215,7 +206,6 @@
             background-color: var(--white-color);
             top: 226px;
             left: 0;
-
         }
     }
 
@@ -240,6 +230,7 @@
     .program__terms {
         flex-basis: 240px;
         padding-left: 0;
+
         &:not(:last-child) {
             margin-right: 40px;
         }
@@ -272,12 +263,11 @@
     }
 
     .program__terms::before {
-    top: -52px;
-    transform: translate(0, 0);
+        top: -52px;
+        transform: translate(0, 0);
     }
 
-.program__terms:not(:last-child)::after {
-    display: none;
+    .program__terms:not(:last-child)::after {
+        display: none;
+    }
 }
-}
-
