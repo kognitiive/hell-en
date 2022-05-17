@@ -1,7 +1,7 @@
-// .benefits {
-//   background-image: linear-gradient(to bottom, var(--black-color) 70%, var(--white-color) 70%);
-//   counter-reset: section;
-// }
+.benefits {
+  background-image: linear-gradient(to bottom, var(--black-color) 70%, var(--white-color) 70%);
+  counter-reset: section;
+}
 .benefits__title {
   margin: 0 auto;
   margin-bottom: 32px;
@@ -110,10 +110,10 @@
     line-height: 1.6;
     letter-spacing: 0.08em;
   }
-  // .benefits {
-  //   padding: 0;
-  //   background: var(--white-color);
-  //   position: relative;
-  //   z-index: 5;
-  // }
+  .benefits {
+    padding: 0;
+    background: linear-gradient(to bottom, var(--black-color) 34.66%, var(--white-color) 34.66%);
+    position: relative;
+    z-index: 5;
+  }
 }

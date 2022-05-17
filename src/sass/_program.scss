@@ -15,6 +15,7 @@
         background-image: url(../images/program-background-mobile.png);
         background-repeat: no-repeat;
         background-size: 150px 137px;
+        overflow: hidden;
     }
 }
 
@@ -135,6 +136,7 @@
             bottom: 80px;
             background-image: url(../images/program-background-tablet.png);
             background-size: 368px 268px;
+            overflow: hidden;
         }
     }
 
@@ -195,6 +197,7 @@
             height: 510px;
             background-image: url(../images/program-background-desktop.png);
             background-size: 684px 510px;
+            overflow: hidden;
         }
 
         &::before {
