@@ -61,12 +61,22 @@
 
   &::after {
     content: '';
+    display: inline-block;
     width: 20px;
+    height: 2px;
     margin-top: 15px;
     margin-bottom: 15px;
-    border: solid var(--accent-color) 1px;
+    background-color: var(--accent-color);
     transition: var(--transition);
-    transform: border;
+    transform: background-color;
+
+    // content: '';
+    // width: 20px;
+    // margin-top: 15px;
+    // margin-bottom: 15px;
+    // border: solid var(--accent-color) 1px;
+    // transition: var(--transition);
+    // transform: border;
   }
 }
 
@@ -94,14 +104,17 @@
   &:focus .How-we-do__card {
     background-color: var(--accent-color);
   }
+
   &:hover .How-we-do__title-card,
   &:focus .How-we-do__title-card {
     color: var(--white-color);
   }
+
   &:hover .How-we-do__title-card::after,
   &:focus .How-we-do__title-card::after {
-    border: solid var(--white-color) 1px;
+    background-color: var(--white-color);
   }
+
   &:hover .How-we-do__description,
   &:focus .How-we-do__description {
     color: var(--white-color);
