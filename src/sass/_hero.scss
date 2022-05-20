@@ -209,19 +209,24 @@
 
     &__tel {
         @media screen and(max-width:767px) {
-            display: inline-block;
+            display: block;
+            width: 100vw;
+            max-width: 767px;
         } 
     }
 
     &__tab {
         @media screen and(min-width:767px) and(max-width:1679px) {
-            display: inline-block;
+            display: block;
+            width: 100vw;
+            max-width: 1679px;
         }
     }
 
     &__desk {
         @media screen and (min-width:1680px) {
-            display: inline-block;
+            display: block;
+            width: 1680px;
         }
     }
 }
