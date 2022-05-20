@@ -41,13 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
    closeButtons.forEach(function(item){
 
-      item.addEventListener('click', function(e) {
+      item.addEventListener('click', function (e) {
+         
          var parentModal = this.closest('.modal');
 
          parentModal.classList.remove('active');
          overlay.classList.remove('active');
+         document.querySelectorAll('.js-open-modal').setAttribute("aria-expanded", false);
       });
-
+      
    }); // end foreach
 
 
@@ -57,14 +59,16 @@ document.addEventListener('DOMContentLoaded', function() {
         if (key == 27) {
 
             document.querySelector('.modal.active').classList.remove('active');
-            document.querySelector('.overlay').classList.remove('active');
+           document.querySelector('.overlay').classList.remove('active');
+           document.querySelectorAll('.js-open-modal').setAttribute("aria-expanded", false);
         };
     }, false);
 
 
     overlay.addEventListener('click', function() {
         document.querySelector('.modal.active').classList.remove('active');
-        this.classList.remove('active');
+       this.classList.remove('active');
+       document.querySelectorAll('.js-open-modal').setAttribute("aria-expanded", false);
     });
 
 
