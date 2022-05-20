@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
             подложке и окну чтобы показать их. */
          modalElem.classList.add('active');
          overlay.classList.add('active');
-         const expanded = modalElem.getAttribute("aria-expanded") === "true" || false;
+         const expanded = this.getAttribute("aria-expanded") === "true" || false;
 
-         modalElem.setAttribute("aria-expanded", !expanded);
+         this.setAttribute("aria-expanded", !expanded);
       }); // end click
 
    }); // end foreach
