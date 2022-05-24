@@ -23,8 +23,6 @@
 
   display: grid;
   grid-template-columns: 1fr;
-
-  grid-column-gap: 0px;
   grid-row-gap: 40px;
   width: 280px;
   background-color: var(--white-color);
@@ -39,18 +37,19 @@
   line-height: 1.42;
   letter-spacing: 0.08em;
   color: var(--black-color);
+  &::before {
+    display: block;
+    counter-increment: section;
+    content: '\2014\202F\202F 0'counter(section);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+  }
 }
-.benefits-list__item::before {
-  display: block;
-  counter-increment: section;
-  content: '\2014\202F\202F 0'counter(section);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.08em;
-  color: var(--accent-color);
-  margin-bottom: 5px;
-}
+
 @media screen and (min-width: 768px) {
   .benefits {
     background: linear-gradient(to bottom, var(--black-color) 40%, var(--white-color) 40%);
@@ -61,21 +60,22 @@
     display: block;
     margin-bottom: 40px;
   }
-  .benefits-list__item::before {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.6;
-  }
+
   .benefits__list {
     width: 704px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 44px 32px;
+    grid-template-rows: 1fr 1.5fr 1.5fr;
+    gap: 44px 50px;
     padding: 40px 92px;
   }
 
   .benefits-list__item {
     width: 236px;
+    &::before {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.6;
+    }
   }
 }
 @media screen and (min-width: 1680px) {
@@ -94,7 +94,7 @@
   .benefits__list {
     width: 1648px;
     padding: 60px 140px;
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 0fr);
     gap: 72px 85px;
   }
@@ -104,12 +104,13 @@
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.08em;
+    &::before {
+      font-size: 20px;
+      line-height: 1.6;
+      letter-spacing: 0.08em;
+    }
   }
-  .benefits-list__item::before {
-    font-size: 20px;
-    line-height: 1.6;
-    letter-spacing: 0.08em;
-  }
+
   .benefits {
     padding: 0;
     background: linear-gradient(to bottom, var(--black-color) 34.66%, var(--white-color) 34.66%);

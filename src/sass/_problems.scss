@@ -24,7 +24,6 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-column-gap: 0px;
   grid-row-gap: 40px;
   width: 280px;
   background-color: var(--white-color);
@@ -38,41 +37,41 @@
   line-height: 1.42;
   letter-spacing: 0.08em;
   color: var(--black-color);
+  &::before {
+    display: block;
+    counter-increment: section;
+    content: '\2014\202F\202F 0'counter(section);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+  }
 }
 
-.problems-list__item::before {
-  display: block;
-  counter-increment: section;
-  content: '\2014\202F\202F 0'counter(section);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.08em;
-  color: var(--accent-color);
-  margin-bottom: 5px;
-}
 @media screen and (min-width: 768px) {
   .problems {
     padding: 40px 0;
   }
   .problems__title {
-    margin: 0;
+    margin-left: 17px;
     margin-bottom: 24px;
     width: 425px;
   }
   .problems__list {
     margin: 0 auto;
     width: 704px;
-    grid-template-columns: repeat(2, 0fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 0fr);
     gap: 44px 32px;
     padding: 32px 80px;
   }
   .problems-list__item {
     width: 216px;
-  }
-  .problems-list__item::before {
-    font-size: 14px;
+    &::before {
+      font-size: 14px;
+    }
   }
 }
 @media screen and (min-width: 1680px) {
@@ -81,7 +80,7 @@
     background: url(../images/fire-problems.svg),
       linear-gradient(to bottom, var(--black-color) 65%, var(--white-color) 30%);
     background-repeat: no-repeat;
-    background-position: right 5% bottom 75%;
+    background-position: right 0% bottom 75%;
   }
   .problems__title {
     font-weight: 800;
@@ -97,17 +96,18 @@
     line-height: 1.4;
     letter-spacing: 0.08em;
     width: 336px;
+    &::before {
+      font-size: 20px;
+      line-height: 1.6;
+      letter-spacing: 0.08em;
+    }
   }
-  .problems-list__item::before {
-    font-size: 20px;
-    line-height: 1.6;
-    letter-spacing: 0.08em;
-  }
+
   .problems__list {
     width: 1648px;
     padding: 60px 140px;
-    grid-template-columns: repeat(3, 0fr);
-    grid-template-rows: repeat(2, 0fr);
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
     gap: 72px 85px;
   }
 }
