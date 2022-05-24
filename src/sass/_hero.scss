@@ -1,5 +1,6 @@
 .hero {
     position: relative;
+    overflow: hidden;
     padding-top: 40px; 
     padding-bottom: 60px;
     
@@ -195,39 +196,25 @@
         letter-spacing: 0.14em;
     }
 }
-.wow {
-    display: block;
-}
-.animation {
-    overflow: hidden;
+
+.line {
     position: absolute;
     bottom: 0;
-    left: 0;
-    display: none;
+    height: 582px;
+    width: 768px;
+
+    background-image: url('../images/animation/animation-tel.png');
+    background-size: 200% 100%;
+    animation: 3s linear 0s infinite alternate line;
     z-index: -1;
-
-    &__tel {
-        @media screen and(max-width:767px) {
-            display: block;
-            max-width: 767px;
-            height: auto;
-
-        } 
     }
 
-    &__tab {
-        @media screen and(min-width:767px) and(max-width:1679px) {
-            display: block;
-            max-width: 1679px;
-            height: auto;
-        }
+@keyframes line {
+    0% {
+        left: -270px;;
     }
-
-    &__desk {
-        @media screen and (min-width:1680px) {
-            display: block;
-            width: 1680px;
-            height: auto;
-        }
+    
+    100% {
+        left: 0px;
     }
 }
